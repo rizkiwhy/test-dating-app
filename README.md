@@ -5,6 +5,7 @@
 This repository contains a Go-based backend service for a dating app. It is containerized using Docker and includes a MySQL database. The service provides RESTful APIs to handle user interactions, relationships, and other core functionalities.
 
 ## Project Structure
+```
 .
 ├── api
 │   ├── handler
@@ -37,7 +38,7 @@ This repository contains a Go-based backend service for a dating app. It is cont
 ├── go.sum
 ├── main.go
 └── README.md
-
+```
 
 ## Getting Started
 
