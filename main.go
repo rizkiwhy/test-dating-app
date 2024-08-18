@@ -1,9 +1,11 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"rizkiwhy-dating-app/api/handler"
 	"rizkiwhy-dating-app/api/router"
+	"rizkiwhy-dating-app/config"
 	"rizkiwhy-dating-app/pkg/order"
 	relationshiptype "rizkiwhy-dating-app/pkg/relationship_type"
 	swipehistory "rizkiwhy-dating-app/pkg/swipe_history"
@@ -39,7 +41,7 @@ func main() {
 }
 
 func databaseConnection() (db *gorm.DB, err error) {
-	dsn := "root:@tcp(127.0.0.1:3306)/dating_app?charset=utf8mb4&parseTime=True&loc=Local"
+	dsn := fmt.Sprintf("%s:@tcp(%s:%s)/%s?charset=utf8mb4&parseTime=True&loc=Local", config.Config("DB_USERNAME"), config.Config("DB_HOST"), config.Config("DB_PORT"), config.Config("DB_NAME"))
 
 	db, err = gorm.Open(mysql.Open(dsn), &gorm.Config{
 		Logger: logger.Default.LogMode(logger.Info),
