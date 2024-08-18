@@ -1,0 +1,306 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "rizkiwhy-dating-app",
+    "collectionId": "d8e86082-77b9-4d57-86a5-a20703694813",
+    "dateExported": "2024-08-18T19:08:13.061Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "c3964c02-7033-4122-9727-afed5d8f70e3",
+            "name": "users",
+            "containerId": "",
+            "created": "2024-08-18T13:00:09.252Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "5be63ac5-3f59-408a-ab7d-e316fb22fd56",
+            "name": "register",
+            "containerId": "c3964c02-7033-4122-9727-afed5d8f70e3",
+            "created": "2024-08-18T13:12:45.137Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "dcb33ce0-a418-45ab-b90c-404523c2e7bd",
+            "name": "login",
+            "containerId": "c3964c02-7033-4122-9727-afed5d8f70e3",
+            "created": "2024-08-18T13:41:09.921Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "aaec593d-19f9-43de-aa51-98fdd871baad",
+            "name": "orders",
+            "containerId": "",
+            "created": "2024-08-18T14:03:08.940Z",
+            "sortNum": 40000
+        },
+        {
+            "_id": "63b9ccea-3535-4931-abf9-a13c07c2bc1a",
+            "name": "purchase-premium-package",
+            "containerId": "aaec593d-19f9-43de-aa51-98fdd871baad",
+            "created": "2024-08-18T14:03:31.010Z",
+            "sortNum": 50000
+        },
+        {
+            "_id": "ec7cdb93-8f2f-416a-9914-07df426cc5d8",
+            "name": "profile",
+            "containerId": "c3964c02-7033-4122-9727-afed5d8f70e3",
+            "created": "2024-08-18T14:21:45.398Z",
+            "sortNum": 60000
+        },
+        {
+            "_id": "965190fb-f1e1-44ed-be09-4a9f67c1a061",
+            "name": "impress",
+            "containerId": "c3964c02-7033-4122-9727-afed5d8f70e3",
+            "created": "2024-08-18T18:57:17.275Z",
+            "sortNum": 70000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "f93cfc11-d38a-423f-a32e-1ceedd533608",
+            "colId": "d8e86082-77b9-4d57-86a5-a20703694813",
+            "containerId": "5be63ac5-3f59-408a-ab7d-e316fb22fd56",
+            "name": "register error unprocessable entity",
+            "url": "localhost:3000/api/users/register",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-08-18T13:13:16.526Z",
+            "modified": "2024-08-18T13:16:37.328Z",
+            "headers": []
+        },
+        {
+            "_id": "331f9ddc-6a7c-4941-bae3-197b392a0cff",
+            "colId": "d8e86082-77b9-4d57-86a5-a20703694813",
+            "containerId": "5be63ac5-3f59-408a-ab7d-e316fb22fd56",
+            "name": "register error bad request",
+            "url": "localhost:3000/api/users/register",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-08-18T13:17:12.267Z",
+            "modified": "2024-08-18T13:17:36.006Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"test\",\n  \"email\": \"test@test.com\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "8633b772-cd22-4c2d-a923-070ed9dd0bc2",
+            "colId": "d8e86082-77b9-4d57-86a5-a20703694813",
+            "containerId": "5be63ac5-3f59-408a-ab7d-e316fb22fd56",
+            "name": "register success",
+            "url": "localhost:3000/api/users/register",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-08-18T13:17:47.317Z",
+            "modified": "2024-08-18T13:28:49.370Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"test3\",\n  \"email\": \"test3@test.com\",\n  \"password\": \"test3\",\n  \"name\": \"test\",\n  \"birthday\": \"2024-08-17\",\n  \"gender\": \"male\",\n  \"isGenderVisible\": true\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "e7b10dee-5652-4a2a-a4a1-04bd52141ead",
+            "colId": "d8e86082-77b9-4d57-86a5-a20703694813",
+            "containerId": "5be63ac5-3f59-408a-ab7d-e316fb22fd56",
+            "name": "register error duplicate",
+            "url": "localhost:3000/api/users/register",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-08-18T13:29:57.934Z",
+            "modified": "2024-08-18T13:30:21.437Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"test2\",\n  \"email\": \"test2@test.com\",\n  \"password\": \"test2\",\n  \"name\": \"test\",\n  \"birthday\": \"2024-08-17\",\n  \"gender\": \"male\",\n  \"isGenderVisible\": true\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "183ff62f-b1b5-46c4-8241-598f8100e9fa",
+            "colId": "d8e86082-77b9-4d57-86a5-a20703694813",
+            "containerId": "dcb33ce0-a418-45ab-b90c-404523c2e7bd",
+            "name": "login success",
+            "url": "localhost:3000/api/users/login",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-08-18T13:41:22.428Z",
+            "modified": "2024-08-18T13:44:11.797Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"test3@test.com\",\n  \"password\":\"test3\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "921823b5-1603-4a0e-82b5-681bba13e826",
+            "colId": "d8e86082-77b9-4d57-86a5-a20703694813",
+            "containerId": "dcb33ce0-a418-45ab-b90c-404523c2e7bd",
+            "name": "login error bad request",
+            "url": "localhost:3000/api/users/login",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-08-18T13:42:47.752Z",
+            "modified": "2024-08-18T13:44:17.367Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"test3@test.com\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "c66078cd-d459-49a2-aa63-aa134dcf514b",
+            "colId": "d8e86082-77b9-4d57-86a5-a20703694813",
+            "containerId": "dcb33ce0-a418-45ab-b90c-404523c2e7bd",
+            "name": "login error unprocesable entity",
+            "url": "localhost:3000/api/users/login",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2024-08-18T13:46:22.421Z",
+            "modified": "2024-08-18T13:46:26.396Z",
+            "headers": []
+        },
+        {
+            "_id": "f1377965-44eb-491b-8730-10db085d55bb",
+            "colId": "d8e86082-77b9-4d57-86a5-a20703694813",
+            "containerId": "63b9ccea-3535-4931-abf9-a13c07c2bc1a",
+            "name": "error bad request auth",
+            "url": "localhost:3000/api/orders/purchase-premium-package",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2024-08-18T14:03:42.618Z",
+            "modified": "2024-08-18T14:04:09.872Z",
+            "headers": []
+        },
+        {
+            "_id": "a3df6895-7356-41e7-b833-c69b2250d583",
+            "colId": "d8e86082-77b9-4d57-86a5-a20703694813",
+            "containerId": "63b9ccea-3535-4931-abf9-a13c07c2bc1a",
+            "name": "error invalid or expired JWT",
+            "url": "localhost:3000/api/orders/purchase-premium-package",
+            "method": "POST",
+            "sortNum": 100000,
+            "created": "2024-08-18T14:06:22.690Z",
+            "modified": "2024-08-18T14:06:45.281Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjQyMzgzOTAsImlhdCI6MTcyMzk3OTE5MCwidXNlcl9pZCI6IjMyMWVkNzZkLWNlYWEtNGFjNS04Njc0LWFjZGRhYzcxZmQwOCIsInVzZXJuYW1lIjoidGVzdDIifQ.gbETUsLTO5ianS8LFNTBvg-ZSeIbFbNGiRDSzkjKOWU"
+            }
+        },
+        {
+            "_id": "c1828178-6b58-4b80-bc4b-ef84097e9a42",
+            "colId": "d8e86082-77b9-4d57-86a5-a20703694813",
+            "containerId": "63b9ccea-3535-4931-abf9-a13c07c2bc1a",
+            "name": "success",
+            "url": "localhost:3000/api/orders/purchase-premium-package",
+            "method": "POST",
+            "sortNum": 110000,
+            "created": "2024-08-18T14:07:50.890Z",
+            "modified": "2024-08-18T17:37:01.443Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjQyNDc4NTEsImlhdCI6MTcyMzk4ODY1MSwidXNlcl9pZCI6IjJiZjEwMmJhLTUxNDktNGYzNS1hNjI5LTA3NTkwYjE1ZWRhOCIsInVzZXJuYW1lIjoidGVzdDMifQ.0RxjIjxuP7ePN96fF5ihxUVaASYpKH2rOvhiuAf-ZlA"
+            }
+        },
+        {
+            "_id": "8d7bef72-2860-452c-9c68-2b6a1218b9eb",
+            "colId": "d8e86082-77b9-4d57-86a5-a20703694813",
+            "containerId": "63b9ccea-3535-4931-abf9-a13c07c2bc1a",
+            "name": "error duplicate already puchased",
+            "url": "localhost:3000/api/orders/purchase-premium-package",
+            "method": "POST",
+            "sortNum": 120000,
+            "created": "2024-08-18T14:16:20.713Z",
+            "modified": "2024-08-18T17:34:12.436Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjQyNDc4NTEsImlhdCI6MTcyMzk4ODY1MSwidXNlcl9pZCI6IjJiZjEwMmJhLTUxNDktNGYzNS1hNjI5LTA3NTkwYjE1ZWRhOCIsInVzZXJuYW1lIjoidGVzdDMifQ.0RxjIjxuP7ePN96fF5ihxUVaASYpKH2rOvhiuAf-ZlA"
+            }
+        },
+        {
+            "_id": "3cd1c198-9892-47dd-944c-eb4e0d88ef53",
+            "colId": "d8e86082-77b9-4d57-86a5-a20703694813",
+            "containerId": "ec7cdb93-8f2f-416a-9914-07df426cc5d8",
+            "name": "error bad request auth",
+            "url": "localhost:3000/api/users/search-partner-profile",
+            "method": "GET",
+            "sortNum": 130000,
+            "created": "2024-08-18T17:20:01.456Z",
+            "modified": "2024-08-18T17:31:27.685Z",
+            "headers": []
+        },
+        {
+            "_id": "bbbd189c-0016-4554-a9f4-076fc37e9068",
+            "colId": "d8e86082-77b9-4d57-86a5-a20703694813",
+            "containerId": "ec7cdb93-8f2f-416a-9914-07df426cc5d8",
+            "name": "error invalid or expired JWT",
+            "url": "localhost:3000/api/users/search-partner-profile",
+            "method": "GET",
+            "sortNum": 140000,
+            "created": "2024-08-18T17:32:25.622Z",
+            "modified": "2024-08-18T17:35:47.477Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjQyMzgzOTAsImlhdCI6MTcyMzk3OTE5MCwidXNlcl9pZCI6IjMyMWVkNzZkLWNlYWEtNGFjNS04Njc0LWFjZGRhYzcxZmQwOCIsInVzZXJuYW1lIjoidGVzdDIifQ.gbETUsLTO5ianS8LFNTBvg-ZSeIbFbNGiRDSzkjKOWU"
+            }
+        },
+        {
+            "_id": "4e58817f-b1cf-432a-93ec-c93773f2cc7b",
+            "colId": "d8e86082-77b9-4d57-86a5-a20703694813",
+            "containerId": "ec7cdb93-8f2f-416a-9914-07df426cc5d8",
+            "name": "success",
+            "url": "localhost:3000/api/users/search-partner-profile",
+            "method": "GET",
+            "sortNum": 150000,
+            "created": "2024-08-18T17:36:22.561Z",
+            "modified": "2024-08-18T17:36:56.221Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjQyNDc4NTEsImlhdCI6MTcyMzk4ODY1MSwidXNlcl9pZCI6IjJiZjEwMmJhLTUxNDktNGYzNS1hNjI5LTA3NTkwYjE1ZWRhOCIsInVzZXJuYW1lIjoidGVzdDMifQ.0RxjIjxuP7ePN96fF5ihxUVaASYpKH2rOvhiuAf-ZlA"
+            }
+        },
+        {
+            "_id": "27bb5908-aff7-47d1-9cdb-89559d8924a1",
+            "colId": "d8e86082-77b9-4d57-86a5-a20703694813",
+            "containerId": "965190fb-f1e1-44ed-be09-4a9f67c1a061",
+            "name": "success",
+            "url": "localhost:3000/api/users/impress/321ed76d-ceaa-4ac5-8674-acddac71fd08/like",
+            "method": "POST",
+            "sortNum": 160000,
+            "created": "2024-08-18T18:57:28.306Z",
+            "modified": "2024-08-18T19:00:34.020Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjQyNDc4NTEsImlhdCI6MTcyMzk4ODY1MSwidXNlcl9pZCI6IjJiZjEwMmJhLTUxNDktNGYzNS1hNjI5LTA3NTkwYjE1ZWRhOCIsInVzZXJuYW1lIjoidGVzdDMifQ.0RxjIjxuP7ePN96fF5ihxUVaASYpKH2rOvhiuAf-ZlA"
+            }
+        },
+        {
+            "_id": "cb9cdd73-f01f-475b-900f-ab751a7cf840",
+            "colId": "d8e86082-77b9-4d57-86a5-a20703694813",
+            "containerId": "965190fb-f1e1-44ed-be09-4a9f67c1a061",
+            "name": "error limit",
+            "url": "localhost:3000/api/users/impress/321ed76d-ceaa-4ac5-8674-acddac71fd08/like",
+            "method": "POST",
+            "sortNum": 170000,
+            "created": "2024-08-18T19:03:13.924Z",
+            "modified": "2024-08-18T19:03:13.924Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjQyNDc4NTEsImlhdCI6MTcyMzk4ODY1MSwidXNlcl9pZCI6IjJiZjEwMmJhLTUxNDktNGYzNS1hNjI5LTA3NTkwYjE1ZWRhOCIsInVzZXJuYW1lIjoidGVzdDMifQ.0RxjIjxuP7ePN96fF5ihxUVaASYpKH2rOvhiuAf-ZlA"
+            }
+        }
+    ],
+    "ref": "u2KIm_arGhKnrm4-0D1w0wpDquWwgjrOi2P7CicMyyihnRuUNik1wA_KSmKyI7wp-SY2aQVAhIlTZ1zi_Nr17A"
+}
